@@ -2,7 +2,7 @@
 
 一个 dsh/Cordis 插件，同时也是一个通用 Node 预加载模块：让旧版 [koffi](https://koffi.dev/) 在 Linux musl 环境下加载 **musl 预编译二进制**，而不是在 glibc 版本里直接 abort。
 
-已在 Alpine Linux edge / aarch64（TMOE + proot）、Node 24、`dsh` 0.2.2-rc.1（固定依赖 `koffi@3.1.1`）上验证。
+已在 Alpine Linux edge、Node 24、`dsh` 0.2.2-rc.1（固定依赖 `koffi@3.1.1`）上验证。
 
 ## 问题背景
 

@@ -2,7 +2,7 @@
 
 A dsh/Cordis plugin and a plain Node preload that make older [koffi](https://koffi.dev/) releases load their **musl** prebuild on Linux musl hosts, instead of aborting inside the glibc one.
 
-Tested on Alpine Linux edge / aarch64 (TMOE + proot), Node 24, with `dsh` 0.2.2-rc.1 (which pins `koffi@3.1.1`).
+Tested on Alpine Linux edge , Node 24, with `dsh` 0.2.2-rc.1 (which pins `koffi@3.1.1`).
 
 ## The problem
 
