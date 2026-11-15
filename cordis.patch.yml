@@ -1,0 +1,7 @@
+# Bundle layer for dsh-koffi-musl-fix.
+#
+# The package root (index.mjs) exports the Cordis plugin. The row id is stable
+# so users and later patch layers can address it.
+- insert:
+    - id: koffi-musl-fix
+      name: dsh-koffi-musl-fix

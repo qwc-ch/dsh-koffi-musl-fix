@@ -1,0 +1,57 @@
+{
+  "name": "dsh-koffi-musl-fix",
+  "version": "0.1.0",
+  "description": "dsh plugin and Node preload that make older koffi releases load their musl prebuild instead of aborting in the glibc one (Linux musl/Alpine).",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./preload": "./preload.mjs",
+    "./core": "./lib/core.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "preload.mjs",
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "koffi",
+    "musl",
+    "alpine",
+    "ffi",
+    "napi",
+    "prebuild",
+    "glibc"
+  ],
+  "license": "MIT",
+  "author": "qwc-ch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwc-ch/dsh-koffi-musl-fix.git"
+  },
+  "homepage": "https://github.com/qwc-ch/dsh-koffi-musl-fix#readme",
+  "bugs": {
+    "url": "https://github.com/qwc-ch/dsh-koffi-musl-fix/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
